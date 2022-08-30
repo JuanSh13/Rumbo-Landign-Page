@@ -1,0 +1,251 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 62.5%;
+}
+
+header {
+  background-image: url(../img/bg-header.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2em 18em;
+}
+
+/* HEADER TOP */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-top__company-logo {
+  width: 20em;
+}
+
+.nav-list {
+  display: flex;
+}
+.nav-list__item {
+  list-style: none;
+  border-bottom: 0.1em solid transparent;
+  margin: 1.5em 1em;
+}
+.nav-list__item:hover {
+  border-bottom: 0.1em solid #fff;
+}
+.list__a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 2.4rem;
+}
+
+/* HEADER BOTTOM */
+.header-bottom {
+  text-align: center;
+  margin: 23em 0;
+}
+
+.header-bottom__cont-pr {
+  margin: 0 0 10em 0;
+}
+.header-bottom__company-logo {
+  width: 7em;
+}
+.header-bottom__company-name {
+  color: #e8f00c;
+  font-size: 5rem;
+  font-weight: lighter;
+}
+.header-bottom__company-slogan {
+  color: #fff;
+  font-size: 2.25rem;
+  font-weight: lighter;
+}
+
+.header-bottom__cont-btn {
+
+}
+.header-bottom__btn {
+  color: #000;
+  font-size: 2rem;
+  background-color: #e8f00c;
+  border-radius: 0.2em;
+  padding: 0.5em;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+.header-bottom__btn:hover {
+  background-color: #fff;
+  
+}
+
+/* BLOCK ONE */
+.block-one {
+  padding: 2em 18em 8rem;
+}
+
+.cont-description {
+  text-align: center;
+  padding: 8rem 0;
+}
+.cont-description__h4 {
+  font-size: 4rem;
+  margin: 0 0 4rem 0;
+}
+.cont-description__p {
+  font-size: 1.5rem;
+}
+
+.block-one__cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 0 0 0;
+}
+
+.cont-card {
+  /* border: 1px solid #000; */
+  box-shadow: 0px 0px 30px 10px #c0c0c0;
+}
+.cont-card:hover {
+  /* border: 1px solid #000; */
+  box-shadow: 0px 0px 50px 10px #aaaaaa;
+  cursor: pointer;
+}
+.cont-card__picture {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+.cont-card__picture-title {
+  color: #e8f00c;
+  font-size: 2rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.cont-card__list {
+  text-align: center;
+  padding: 1em;
+} 
+.cont-card__item {
+  list-style: none;
+  font-size: 1.5em;
+}
+
+
+/* BLOCK TWO */
+.block-two {
+  background-image: url(../img/bg-destinos.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2em 18em 8rem;
+  
+}
+
+.block-two__cont-dest {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 0 0 8rem 0;
+}
+.block-two__h4 {
+  color: #e8f00c;
+}
+
+.cont-cardtwo {
+  text-align: center;
+}
+.cont-cardtwo__img {
+}
+.cont-cardtwo__img:hover {
+  cursor: pointer;
+}
+.cont-cardtwo__h5 {
+  font-size: 3rem;
+  color: #fff;
+  font-weight: lighter;
+}
+
+/* BLOCK THREE */
+.block-three {
+  background-color: #e8f00c;
+  padding: 2em 18em 8em;
+}
+
+.user-form__form {
+  text-align: center;
+}
+.user-form__input {
+  margin: 0 1em 2em 1em;
+  padding: .5em;
+  width: 30%;
+}
+.user-form__btn {
+  background-color: #898d0e;
+  width: 20%;
+  padding: .5em;
+  font-size: 2rem;
+  color: #fff;
+  border: none;
+  border-radius: .2em;
+  margin: 2em 0;
+}
+.user-form__btn:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #000;
+}
+
+
+/* BLOCK FOUR */
+.block-four {
+  background-color: #000;
+  padding: 2em 18em;
+}
+
+.block-four__list {
+  text-align: center;
+}
+.block-four__item {
+  list-style: none;
+  padding: 1em 0;
+}
+.block-four__a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 768px) {
+  .header-top {
+    display: inline;
+  }
+  .nav-list {
+    display: inline;
+  }
+  .cont-card__picture {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+  .cont-card__picture-title {
+    color: #e8f00c;
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
